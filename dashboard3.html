@@ -1,0 +1,204 @@
+<html>
+<head>
+  <title>Bootstrap Components Dashboard</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+    .flip-card {
+      perspective: 1000px;
+    }
+    .flip-card-inner {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      width: 250px;
+      height: 250px;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      overflow: hidden;
+    } 
+    .flip-card-front {
+      background: #fa5bff;
+     color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;#0b5fb3;
+    }
+    .flip-card-back {
+      background: #004b96
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body class="bg-light p-4">
+
+  <div class="container">
+    <h2 class="text-center mb-4">Bootstrap Components Dashboard</h2>
+
+    <div class="accordion" id="componentsAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCard">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard">
+            Cards
+          </button>
+        </h2>
+
+  <div id="collapseCard" data-bs-parent="#componentsAccordion">
+    <div class="accordion-body">
+
+    <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h5>Cards 1</h5>
+                        </div>
+            <div class="flip-card-back">
+              <p></p>
+              <img src="mu-fest.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h5>Cards 2</h5>
+            </div>
+            <div class="flip-card-back">
+              <p></p>
+              <img src="festival.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h5>Card 3</h5>
+            </div>
+            <div class="flip-card-back">
+              <p></p>
+              <img src="student-club.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h5>Card 4</h5>
+            </div>
+            <div class="flip-card-back">
+              <p></p>
+              <img src="festival.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAlerts">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlerts">
+            Alerts
+          </button>
+        </h2>
+        <div id="collapseAlerts" class="accordion-collapse collapse" data-bs-parent="#componentsAccordion">
+          <div class="accordion-body">
+            <div class="alert alert-success">Success alert—check it out!</div>
+            <div class="alert alert-warning">Warning alert—check it out!</div>
+            <div class="alert alert-danger">Danger alert—check it out!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingButtons">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseButtons">
+            Buttons
+          </button>
+        </h2>
+        <div id="collapseButtons" class="accordion-collapse collapse" data-bs-parent="#componentsAccordion">
+          <div class="accordion-body">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTable">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTable">
+            Table
+          </button>
+        </h2>
+        <div id="collapseTable" class="accordion-collapse collapse" data-bs-parent="#componentsAccordion">
+          <div class="accordion-body">
+            <table class="table table-bordered table-striped">
+              <thead><a class="table-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              </a>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Vishwaraj Jadeja</td>
+                  <td>Vishwaraj304@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Tarvish Bhimani</td>
+                  <td>Tarvish85@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Jeet Sojitra</td>
+                  <td>jeet2410@gmail.com</td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
